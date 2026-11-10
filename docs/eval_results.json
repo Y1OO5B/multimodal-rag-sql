@@ -1,0 +1,132 @@
+[
+  {
+    "question": "식별자/비식별자 관계 조정 그림에 따르면, 엔터티 사이의 관계 유형은 무엇에 의해 결정되나요?",
+    "evidence": [
+      {
+        "type": "텍스트",
+        "preview": "[le vida [Barker 표기법] 기 준 엔터티 관 련 엔터티 | 선 택 사양 Target) | 필 수"
+      },
+      {
+        "type": "이미지",
+        "name": "figure-p058-20.jpg"
+      },
+      {
+        "type": "텍스트",
+        "preview": "Ry 식 별 자 는 엔 터 티 내 에 서 SIAR ASS 구분할 + 있는 바울 [그림 ｌ-1-40] 식 별 "
+      },
+      {
+        "type": "텍스트",
+        "preview": "선택참여관계는 ERD 에서 관계를 나타내는 선에서 선택참여하는 엔터티 쪽을 원으로 표 시한다 필수참여는 아무"
+      }
+    ],
+    "evidence_hit": true,
+    "before": "자료에 따르면, 엔터티 사이의 관계 유형은 업무 분석을 통해 결정됩니다. 관계를 정의하기 위해서는 두 개의 엔터티 사이에 관심 있는 연관 규칙이 존재하는지, 정보의 조합이 발생되는지, 그리고 업무 기술서에 관계 연결에 대한 규칙이나 동사가 서술되어 있는지를 체크해야 합니다. 이러한 질문을 통해 관계를 도출할 수 있습니다.",
+    "after": "엔터티 사이의 관계 유형은 업무특징, 자식 엔터티의 주식별자 구성, SQL 전략에 의해 결정됩니다.",
+    "before_seconds": 2.2,
+    "after_seconds": 2.5
+  },
+  {
+    "question": "식별자의 분류 그림에서 교육이력 엔터티의 주식별자는 어떤 속성들로 구성되고, 어떤 식별자로 분류되나요?",
+    "evidence": [
+      {
+        "type": "이미지",
+        "name": "figure-p054-14.jpg"
+      },
+      {
+        "type": "이미지",
+        "name": "figure-p053-13.jpg"
+      },
+      {
+        "type": "텍스트",
+        "preview": "Ry 식 별 자 는 엔 터 티 내 에 서 SIAR ASS 구분할 + 있는 바울 [그림 ｌ-1-40] 식 별 "
+      },
+      {
+        "type": "이미지",
+        "name": "figure-p053-12.jpg"
+      }
+    ],
+    "evidence_hit": true,
+    "before": "교육이력 엔터티의 주식별자는 자료에 명시되어 있지 않으므로 어떤 속성들로 구성되는지 알 수 없습니다. 또한, 어떤 식별자로 분류되는지도 자료에 포함되어 있지 않아 답변할 수 없습니다.",
+    "after": "교육이력 엔터티의 주식별자는 \"주식별자\"로 분류되며, 다음과 같은 속성들로 구성됩니다:\n\n1. **유일성**: 주식별자에 의해 엔터티 내의 모든 인스턴스들이 유일하게 구분되어야 합니다.\n2. **최소성**: 주식별자를 구성하는 속성의 수는 유일성을 만족하는 최소의 수가 되어야 합니다.\n3. **불변성**: 지정된 주식별자의 값은 자주 변하지 않아야 합니다.\n4. **존재성**: 주식별자가 지정되면 반드시 값이 들어와야 합니다.\n\n이러한 속성들은 주식별자의 특성에 해당합니다.",
+    "before_seconds": 1.6,
+    "after_seconds": 5.0
+  },
+  {
+    "question": "SYS_CONNECT_BY_PATH 함수 예제의 실행 결과에서 사원 D의 경로는 무엇인가요?",
+    "evidence": [
+      {
+        "type": "텍스트",
+        "preview": "예제[ ] SELECT CONNECT_BY_ROOT 사원 루트사원 , SYS_CONNECT_BY_PATH( "
+      },
+      {
+        "type": "텍스트",
+        "preview": "Kdata 데이터자격검정 - 322 - www.dataq.or.kr 제 장 2 SQL 활용 예제[ ] SEL"
+      },
+      {
+        "type": "이미지",
+        "name": "figure-p328-26.jpg"
+      },
+      {
+        "type": "표",
+        "preview": "함수 설명 루트 데 이 터 부터 현재 전 개 할 데 이 터 까 지의 경 로 를 표 시 한 다. 사용법 : S"
+      }
+    ],
+    "evidence_hit": false,
+    "before": "사원 D의 경로는 \"A/C/D\"입니다.",
+    "after": "사원 D의 경로는 \"A/C/D\"입니다.",
+    "before_seconds": 1.2,
+    "after_seconds": 1.1
+  },
+  {
+    "question": "계층형 질의에서 CONNECT_BY_ROOT는 무엇을 표시하고, 어떤 종류의 연산자인가요?",
+    "evidence": [
+      {
+        "type": "이미지",
+        "name": "figure-p328-26.jpg"
+      },
+      {
+        "type": "표",
+        "preview": "가상 칼럼 설명 루트 데 이 터 이 면 Ｌ 그 하위 데 이 터 이 면 3 이 다. 리 프 [ ㅁ 681) 데"
+      },
+      {
+        "type": "표",
+        "preview": "함수 설명 루트 데 이 터 부터 현재 전 개 할 데 이 터 까 지의 경 로 를 표 시 한 다. 사용법 : S"
+      },
+      {
+        "type": "텍스트",
+        "preview": "예제[ ] SELECT CONNECT_BY_ROOT 사원 루트사원 , SYS_CONNECT_BY_PATH( "
+      }
+    ],
+    "evidence_hit": true,
+    "before": "CONNECT_BY_ROOT는 계층형 질의에서 루트 노드를 표시하는 가상 칼럼입니다. 이는 현재 노드의 루트 조상을 나타내며, 계층 구조에서 최상위 부모를 식별하는 데 사용됩니다. CONNECT_BY_ROOT는 Oracle SQL에서 제공하는 연산자로, 계층형 데이터의 루트 노드를 조회할 때 사용됩니다.",
+    "after": "CONNECT_BY_ROOT는 현재 전개할 데이터의 루트 데이터를 표시하는 단항 연산자입니다. 이 함수는 계층형 질의에서 루트 데이터부터 현재 전개할 데이터까지의 경로를 나타냅니다.",
+    "before_seconds": 2.0,
+    "after_seconds": 1.6
+  },
+  {
+    "question": "계층형 질의에서 START WITH절과 CONNECT BY절은 각각 무엇을 지정하나요?",
+    "evidence": [
+      {
+        "type": "이미지",
+        "name": "figure-p325-22.jpg"
+      },
+      {
+        "type": "이미지",
+        "name": "figure-p328-26.jpg"
+      },
+      {
+        "type": "텍스트",
+        "preview": "Kdata 데이터자격검정 - 55 - www.dataq.or.kr 제 장 2 SQL 활용 제 절 계층형 질의"
+      },
+      {
+        "type": "표",
+        "preview": "가상 칼럼 설명 루트 데 이 터 이 면 Ｌ 그 하위 데 이 터 이 면 3 이 다. 리 프 [ ㅁ 681) 데"
+      }
+    ],
+    "evidence_hit": false,
+    "before": "계층형 질의에서 `START WITH` 절은 계층 구조 전개의 시작 위치를 지정하는 구문으로, 즉 루트 데이터를 지정합니다. 반면 `CONNECT BY` 절은 다음에 전개될 자식 데이터를 지정하는 구문으로, 자식 데이터는 `CONNECT BY` 절에 주어진 조건을 만족해야 합니다.",
+    "after": "계층형 질의에서 `START WITH` 절은 계층 구조의 시작점을 지정하며, `CONNECT BY` 절은 부모와 자식 간의 관계를 정의하여 계층 구조를 탐색하는 데 사용됩니다. `START WITH` 절에 의해 지정된 조건을 만족하는 데이터가 루트 노드가 되고, `CONNECT BY` 절에 의해 정의된 조건에 따라 하위 데이터가 연결됩니다.",
+    "before_seconds": 1.8,
+    "after_seconds": 2.7
+  }
+]
